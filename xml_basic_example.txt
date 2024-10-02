@@ -1,0 +1,16 @@
+<story>
+  <beginning>
+    <event>Something happened.</event>
+  </beginning>
+  <middle>
+    <event>Something else happened.</event>
+  </middle>
+  <end>
+    <conclusion>That’s it.</conclusion>
+  </end>
+</story>
+
+
+<root>
+  <serialized_key>meow</serialized_key>
+</root>

@@ -1,0 +1,17 @@
+name: Deploy to Server
+
+on:
+  push:
+    branches:
+      - main  # Trigger on push to the main branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest  # Use the latest Ubuntu runner
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2  # Checkout the repository code
+
+    - name: Deploy Application
+      run: echo "No deployment script provided."  # Placeholder for deployment

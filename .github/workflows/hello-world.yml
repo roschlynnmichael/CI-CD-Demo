@@ -1,0 +1,19 @@
+name: Hello World Workflow
+
+# Controls when the workflow will run
+on:
+  push:
+    branches:
+      - main  # Trigger the workflow on pushes to the main branch
+
+# Define the jobs to run
+jobs:
+  hello-world-job:
+    runs-on: ubuntu-latest  # Use the latest version of Ubuntu
+
+    steps:
+    - name: Checkout code  # Optional if no code is needed from the repo
+      uses: actions/checkout@v2  # Get a copy of the repository's code
+
+    - name: Say Hello World  # Step to print "Hello, World!"
+      run: echo "Hello, World!"

@@ -1,0 +1,25 @@
+name: Python CI
+
+on:
+  push:
+    branches:
+      - main  # Trigger on push to the main branch
+
+jobs:
+  test:
+    runs-on: ubuntu-latest  # Use the latest Ubuntu runner
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2  # Checkout the repository code
+
+    - name: Set Up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.9'  # Specify Python version
+
+    - name: Install Dependencies
+      run: echo "No requirements.txt found."  # Placeholder for installing dependencies
+
+    - name: Run Tests
+      run: echo "No tests to run yet."  # Placeholder for running tests

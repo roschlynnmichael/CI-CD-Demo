@@ -1,0 +1,17 @@
+name: Docker Build
+
+on:
+  push:
+    branches:
+      - main  # Trigger on push to the main branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # Use the latest Ubuntu runner
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2  # Checkout the repository code
+
+    - name: Build Docker Image
+      run: echo "No Dockerfile found."  # Placeholder for building Docker image
